@@ -10,8 +10,8 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #0b0909;
+    color: #f6f3f3;
   }
   
   /* --------- Header --------- */
@@ -19,8 +19,8 @@
     display: flex;
     align-items: center;
     padding: 2rem;
-    background-color: #f4f4f4;
-    border-bottom: 2px solid #ddd;
+    background-color: #343232;
+    border-bottom: 2px solid #9f9595;
   }
   
   .profile-pic {
@@ -59,11 +59,17 @@
   
   /* WorkFlow images */
   #views {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: block;
+    flex-wrap: unset;
   }
+
+  .views {
+    flex: 0 0 auto;            
+    width: 400px;              
+    display: flex;
+    flex-direction: column;    
+    gap: 10px;                
+}
   
   .pics {
     width: 200px;
@@ -99,6 +105,23 @@
     margin-bottom: 1rem;
     display: inline-block;
   }
+
+  .horizontal-scroll {
+    display: flex;             
+    overflow-x: auto;          
+    gap: 20px;                  
+    scroll-behavior: smooth;  
+    padding: 20px;
+    height: 100vh;              
+}
+
+.horizontal-scroll section {
+  display: flex;
+  flex-direction: row;      
+  gap: 10px;                
+  overflow-x: auto;         
+  flex: 0 0 auto;    
+}
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
